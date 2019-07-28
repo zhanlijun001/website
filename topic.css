@@ -1,0 +1,277 @@
+.main {
+  margin-top: 60px;
+}
+
+.main .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.main .container {
+  flex: 1;
+}
+
+.main .topic-image {
+  height: 430px;
+  position: relative;
+}
+
+.main .topic-image > img {
+  width: 100%;
+  height: auto;
+  margin-top: 215px;
+  transform: translate(0, -50%);
+}
+
+.main .topic-image > h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #fff;
+  padding: 18px;
+}
+
+.main .list-wrapper {
+  padding-left: 24px;
+}
+
+.main .list-wrapper > h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #000;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.main .top-list {
+  width: 240px;
+  box-sizing: border-box;
+  counter-reset: counter-name;
+  margin-top: 12px;
+}
+
+.main .top-list li {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.main .top-list li:first-child {
+  margin-top: 0;
+}
+
+.main .top-list li > * {
+  vertical-align: bottom;
+}
+
+.main .top-list li::before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #bebebe;
+  border-radius: 3px;
+}
+
+.main .top-list li:nth-child(1)::before,
+.main .top-list li:nth-child(2)::before,
+.main .top-list li:nth-child(3)::before {
+  background-color: #ec4141;
+}
+
+.main .top-list li a {
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 12em;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.main .post-list {
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.main .list-nav li {
+  float: left;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  margin-left: 50px;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.main .list-nav li ::after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #949494;
+  height: 14px;
+  left: -20px;
+  top: 30%;
+  margin-top: -2px;
+}
+
+.main .post-list li:first-child {
+  margin-left: 0;
+}
+
+.main .list-nav {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.main .list-nav li a {
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.main .article > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main .article-text {
+  padding-left: 40px;
+}
+
+.main .article-img img {
+  width: 250px;
+  height: 130px;
+}
+
+.main .article-text > h4 a {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.main .article-text > h4 a {
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20em;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.main .article-text > .describe {
+  font-size: 15px;
+  color: #949494;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.main .article-text > .author {
+  font-size: 15px;
+  color: #949494;
+}
+
+.main .article {
+  margin-bottom: 30px;
+}
+
+.main .article:last-child {
+  margin-bottom: 20px;
+}
+
+.main .list-zhuanlan {
+  margin-top: 62px;
+  padding-left: 24px;
+}
+.main .list-zhuanlan > h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #000;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.main .zhuanlan-nav li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main .zhuanlan-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.main .zhuanlan-nav li > .post-title {
+  text-overflow: ellipsis;
+  max-width: 16em;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.8;
+  padding: 10px 20px;
+}
+
+.main .qrcode {
+  margin-top: 40px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.main .qrcode > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main .qrcode img {
+  width: 100px;
+  height: auto;
+}
+
+.main .qrcode > .text {
+  line-height: 32px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer .title {
+  color: #347ab7;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.footer .network {
+  color: #347ab7;
+  font-size: 20px;
+  line-height: 26px;
+}

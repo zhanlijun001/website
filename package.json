@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "serve": "npx serve -s ./ -p 12306"
+  },
+  "devDependencies": {
+    "serve": "^11.1.0"
+  }
+}

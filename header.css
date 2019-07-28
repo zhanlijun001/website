@@ -1,0 +1,78 @@
+.header {
+  background-color: #347ab7;
+  width: 100%;
+  position: fixed; /* 绝对定位，fixed是相对于浏览器窗口定位。 */
+  z-index: 99; /* 层叠顺序，数值越大就越高。页面滚动的时候就不会被其他内容所遮挡。 */
+  top:0;
+}
+
+.header .inner > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .logo {
+  font-size: 20px;
+  line-height: 46px;
+  color: #fff;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.header .logo::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url(./images/logo.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.header .menu {
+  background-color: #347ab7;
+}
+
+.header .menu > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .menu li {
+  float: left;
+  font-size: 16px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header .menu li a {
+  color: #fff;
+}
+
+.header .menu li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.header .menu li > .menu {
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  right: 0;
+}
+
+.header .menu li > .menu li {
+  width: 100%;
+  padding: 0;
+  clear: both;
+}
+
+.header .menu li:hover > .menu {
+  display: block;
+  z-index: 999;
+}
